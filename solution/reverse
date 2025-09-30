@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+buffer=''
+while read -r line; do
+	buffer="$line"$'\n'"$buffer"
+done
+
+echo "$buffer"
